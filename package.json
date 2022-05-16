@@ -1,0 +1,13 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "projet 2 - Web developer Bootcamp",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./scss:./css --style compressed"
+  },
+  
+  "author": "",
+  "license": "ISC"
+
+  }
