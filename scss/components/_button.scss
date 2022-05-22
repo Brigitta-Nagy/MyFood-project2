@@ -1,4 +1,18 @@
 button {
-  color: #fff;
+  cursor: pointer;
+  border: none;
+  color: $white-color;
   background-color: $secondary-color;
+  background: linear-gradient(  $secondary-color, $primary-color);
+  width: 250px;
+  border-radius: 50px;
+  font-size: 18px;
+  padding: 20px;
+  margin: 10px 0 30px;
+  font-family: $font-weight-medium;
+  &:hover{
+    transform: scale(1.1);
+    transition: ease-in-out 1s;
+    /*box-shadow: ;*/
+  }
 }

@@ -1,9 +1,15 @@
 
 footer{
+  display: flex;
+  flex-direction: column;
   background-color: $dark-grey-color;
   color: $white-color;
+ 
+  .fa-solid, p {
+    margin: 5px 15px;
+  }
   img{
-    
-    width: 40%
+    margin: 15px 15px;
+    width: 30%
   }
 }
