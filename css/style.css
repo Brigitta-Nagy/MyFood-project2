@@ -1,1 +1,309 @@
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:"";content:none}table{border-collapse:collapse;border-spacing:0}button{cursor:pointer;border:none;color:#f5f5f5;background-color:#ff79da;background:linear-gradient(#FF79DA, #9356DC);width:250px;border-radius:50px;font-size:18px;padding:20px;margin:10px 0 30px;font-family:400}button:hover{transform:scale(1.1);transition:ease-in-out 1s}header{margin:15px;display:flex;justify-content:center}header img{width:50%}footer{display:flex;flex-direction:column;background-color:#404040;color:#f5f5f5}footer .fa-solid,footer p{margin:5px 15px}footer img{margin:15px 15px;width:30%}*{box-sizing:border-box;margin:0;padding:0}body{font-family:Roboto,sans-serif}.book-menu{margin:20px 0;display:flex;flex-direction:column;justify-content:center;text-align:center;align-items:center;flex-wrap:wrap;background-color:#e6e6e6}.book-menu h1{font-size:25px;margin:20px;font-weight:1000}.book-menu p{margin:15px;font-size:25px;color:gray;padding:0 10px;line-height:1.2;font-weight:200}.paris-text{display:flex;width:100%;height:50px;justify-content:center;align-items:center;background-color:#e0e0e0;font-size:15px;font-weight:1000;color:#404040}.fa-location-dot{margin-right:10px}.how-works{margin:0 10px}.how-works h2{font-size:25px;font-weight:1000}.how-works .choose,.how-works .create,.how-works .go{background-color:#e6e6e6;border-radius:25px;margin:15px;font-size:18px;font-weight:600;padding:35px;display:flex}.how-works .choose i,.how-works .create i,.how-works .go i{margin-right:15px}.how-works .choose i:hover,.how-works .create i:hover,.how-works .go i:hover{color:#9356dc;transition:5ms}.how-works .choose .number,.how-works .create .number,.how-works .go .number{position:absolute;margin:-10px -50px;padding:10px 13px;font-size:15px;font-weight:600;background-color:#9356dc;border-radius:50px}.restaurants-container{background-color:#ededed}.restaurants-container h2{font-size:25px;font-weight:600;padding:50px 20px 25px}.restaurants-container article{border-radius:25px;margin:15px;overflow:hidden}figure img{width:100%;height:300px;object-fit:cover}figcaption{display:flex;flex-direction:column;margin-top:-5px;padding:10px;text-align:start;background-color:#f5f5f5}figcaption h3{font-size:20px;font-weight:600;margin:10px 0}/*# sourceMappingURL=style.css.map */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  color: #f5f5f5;
+  background-color: #FF79DA;
+  background: linear-gradient(#FF79DA, #9356DC);
+  width: 250px;
+  border-radius: 50px;
+  font-size: 18px;
+  padding: 20px;
+  margin: 10px 0 30px;
+  font-family: 400;
+  transition: ease-in-out 1s;
+}
+button:hover {
+  transform: scale(1.1);
+  transition: ease-in-out 1s;
+  /*box-shadow: ;*/
+}
+
+/*@import "media.scss";*/
+header {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+}
+header img {
+  width: 50%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #404040;
+  color: #f5f5f5;
+}
+footer .fa-solid, footer p {
+  margin: 5px 15px;
+}
+footer img {
+  margin: 15px 15px;
+  width: 30%;
+}
+footer li {
+  display: block;
+  border: 1px solid black;
+}
+footer .logo-shirkand {
+  font-family: "Shrikhand", cursive;
+  font-size: 50px;
+  letter-spacing: 1.9;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.book-menu {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #e6e6e6;
+}
+.book-menu h1 {
+  font-size: 25px;
+  margin: 20px;
+  font-weight: 1000;
+}
+.book-menu p {
+  margin: 15px;
+  font-size: 25px;
+  color: grey;
+  padding: 0 10px;
+  line-height: 1.2;
+  font-weight: 200;
+}
+
+.paris-text {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0e0e0;
+  font-size: 15px;
+  font-weight: 1000;
+  color: #404040;
+}
+
+.fa-location-dot {
+  margin-right: 10px;
+}
+
+.how-works {
+  margin: 0 10px;
+}
+.how-works h2 {
+  font-size: 25px;
+  font-weight: 1000;
+}
+.how-works .choose, .how-works .create, .how-works .go {
+  background-color: #e6e6e6;
+  border-radius: 25px;
+  margin: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 35px;
+  display: flex;
+}
+.how-works .choose:hover, .how-works .create:hover, .how-works .go:hover {
+  color: #9356DC;
+  transition: 5ms;
+}
+.how-works .choose i, .how-works .create i, .how-works .go i {
+  margin-right: 15px;
+}
+.how-works .choose .number, .how-works .create .number, .how-works .go .number {
+  position: absolute;
+  margin: -10px -50px;
+  padding: 10px 13px;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #9356DC;
+  border-radius: 50px;
+}
+
+.restaurants-container {
+  background-color: #ededed;
+}
+.restaurants-container h2 {
+  font-size: 25px;
+  font-weight: 600;
+  padding: 50px 20px 25px;
+}
+.restaurants-container article {
+  border-radius: 25px;
+  margin: 15px;
+  overflow: hidden;
+}
+
+figure {
+  position: relative;
+}
+figure .new {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #99E2D0;
+  color: #2c9c81;
+  font-weight: 600;
+  padding: 10px 25px;
+  color: green;
+}
+
+figure img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+figcaption {
+  display: flex;
+  flex-direction: column;
+  margin-top: -5px;
+  padding: 10px;
+  /*text-align: start;*/
+  background-color: #f5f5f5;
+}
+figcaption h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.fa-heart {
+  align-self: flex-end;
+  padding: 15px;
+  margin-top: -35px;
+}
+
+img {
+  width: 100%;
+  height: 80% px;
+}
+
+.menu-card {
+  background-color: #e6e6e6;
+  margin: -150px 0 0 0;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurant-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  margin-left: 25px;
+}
+.restaurant-name h1 {
+  font-weight: 1000;
+  font-size: 45px;
+  font-family: "Shrikhand", cursive;
+}
+
+.entrees-cards {
+  padding: 20px;
+}
+.entrees-cards h2 {
+  font-size: 25px;
+  margin-left: 15px;
+}
+.entrees-cards h2:after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 8%;
+  border-bottom: 3px solid #99E2D0;
+  padding-top: 8px;
+}
+
+.card {
+  background-color: #f5f5f5;
+  margin: 25px 15px;
+  border-radius: 25px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+.card .meal-name {
+  font-weight: 1000;
+  font-size: 20px;
+  margin: 10px 0;
+}
+.card p {
+  font-size: 20px;
+}
+
+.fee {
+  align-self: flex-end;
+  font-weight: 1000;
+  margin: -15px 5px;
+}

@@ -1,0 +1,81 @@
+
+  img {
+    width: 100%;
+    height: 80%px;
+      
+
+  }
+
+  .menu-card {
+    background-color: $color;
+    margin: -150px 0 0 0;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    
+   
+   }
+  .restaurant-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    margin-left: 25px;
+    h1 {
+      font-weight: $font-weight-bold;
+      font-size: 45px;
+      font-family: $font-family;
+    }
+  
+  }
+
+ .entrees-cards {
+ 
+   padding: 20px;
+   
+   h2 {
+    font-size: 25px;
+    margin-left: 15px;
+
+    }
+   h2:after {
+     content:"";
+     display: block;
+     position: relative;
+     width: 8%;
+     border-bottom: 3px solid $tertiary-color;
+     padding-top: 8px;
+   } 
+ }
+
+
+ .card {
+  background-color: $white-color;
+  margin: 25px 15px;
+  border-radius: 25px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  .meal-name {
+    font-weight: $font-weight-bold;
+    font-size: 20px;
+    margin: 10px 0; 
+
+  }
+  p{
+    font-size: 20px;
+  }
+ }
+ 
+.fee{
+  align-self: flex-end;
+  font-weight: $font-weight-bold;
+  margin: -15px 5px;
+}
+ 
+ 

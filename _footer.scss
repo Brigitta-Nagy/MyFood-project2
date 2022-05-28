@@ -1,27 +1,16 @@
 
-footer {
+footer{
   display: flex;
   flex-direction: column;
   background-color: $dark-grey-color;
   color: $white-color;
-  
+  /*font-family: $font-family;*/
+ 
   .fa-solid, p {
     margin: 5px 15px;
   }
-  img {
+  img{
     margin: 15px 15px;
     width: 30%
   }
-
-  li {
-    display: block;
-    border: 1px solid black;
-  }
-  .logo-shirkand {
-    font-family: $font-family;
-    font-size: 50px;
-    letter-spacing: 1.9;
-
-  }
-
 }

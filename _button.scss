@@ -9,13 +9,12 @@ button {
   font-size: 18px;
   padding: 20px;
   margin: 10px 0 30px;
-  
   font-family: $font-weight-medium;
-  transition: ease-in-out 1s;
-  &:hover{
+  transition: ease-in-out 1s; 
+    &:hover{
     transform: scale(1.1);
     transition: ease-in-out 1s;
     /*box-shadow: ;*/
-
+   
   }
 }
