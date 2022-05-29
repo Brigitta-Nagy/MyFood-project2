@@ -12,9 +12,11 @@ button {
   
   font-family: $font-weight-medium;
   transition: ease-in-out 1s;
+  box-shadow: $box-shadow;
+  
   &:hover{
     transform: scale(1.1);
-    transition: ease-in-out 1s;
+    
     /*box-shadow: ;*/
 
   }
