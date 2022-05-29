@@ -58,7 +58,7 @@ button {
   border-radius: 50px;
   font-size: 18px;
   padding: 20px;
-  margin: 10px 0 30px;
+  margin: 10px auto 30px;
   font-family: 400;
   transition: ease-in-out 1s;
 }
@@ -84,21 +84,19 @@ footer {
   background-color: #404040;
   color: #f5f5f5;
 }
-footer .fa-solid, footer p {
-  margin: 5px 15px;
+footer i {
+  margin: 0 10px;
 }
-footer img {
-  margin: 15px 15px;
-  width: 30%;
+footer li * {
+  display: inline;
 }
-footer li {
-  display: block;
-  border: 1px solid black;
-}
-footer .logo-shirkand {
+footer .footer-title {
   font-family: "Shrikhand", cursive;
-  font-size: 50px;
-  letter-spacing: 1.9;
+  font-size: 30px;
+  margin: 10px 15px 0;
+}
+footer ul li {
+  margin: 15px 15px;
 }
 
 * {
