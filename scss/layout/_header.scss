@@ -6,4 +6,9 @@ header{
   img{
     width: 50%;
   }
+  @include tablet {
+    width: 50%;
+    margin: 25px auto;
+    
+  }
 }

@@ -30,8 +30,7 @@
       font-size: 45px;
       font-family: $font-family;
     }
-  
-  }
+    }
 
 
  .entrees-cards {
@@ -43,20 +42,26 @@
     margin-left: 15px;
 
     }
+
    h2:after {
      content:"";
      display: block;
      position: relative;
+
      width: 8%;
      border-bottom: 3px solid $tertiary-color;
      padding-top: 8px;
    } 
-   /* animate-top {position:relative;animation:animatetop 0.4s;}
-    
-    @keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}*/
- }
-
-
+  }
+  @keyframes slide-up {
+    0%{ transform: translateY(100px); opacity:0
+    }
+    50%{ opacity: 0.25;
+    }
+    100% {
+       opacity: 1;
+    }
+  }
  .card {
   background-color: $white-color;
   margin: 25px 15px;
@@ -66,6 +71,8 @@
   flex-direction: column;
   padding: 15px;
   box-shadow: $box-shadow;
+  animation: slide-up 1.5s ease;
+
 
   .meal-name {
     font-weight: $font-weight-bold;
@@ -85,4 +92,11 @@
 }
 
  
- 
+ .card2{
+  animation: slide-up 1.5s ease;
+ }
+.card3 {
+  animation: slide-up 1.5s ease;
+}
+
+
