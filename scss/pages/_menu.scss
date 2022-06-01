@@ -92,12 +92,29 @@
   }
  }
  
-.fee{
+.tick-fee-container{
   align-self: flex-end;
   font-weight: $font-weight-bold;
-  margin: -15px 5px;
+  margin: -15px 5px 25px;
+
+  height: 100px;
+  
 }
- 
+.fa-check{
+  color: $tertiary-color;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 50px;
+  margin: 25px;
+
+  
+}
+ .tick{ 
+  position: absolute;
+  margin: -70px 50px;
+   background-color: $tertiary-color;
+  
+ }
  .card2{
   animation: slide-up 1.8s ease;
  }

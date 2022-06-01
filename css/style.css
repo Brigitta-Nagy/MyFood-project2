@@ -219,6 +219,7 @@ body {
   font-weight: 600;
   background-color: #9356DC;
   border-radius: 50px;
+  color: #fff;
 }
 @media (min-width: 768px) {
   .how-works {
@@ -398,10 +399,25 @@ img {
   font-size: 20px;
 }
 
-.fee {
+.tick-fee-container {
   align-self: flex-end;
   font-weight: 1000;
-  margin: -15px 5px;
+  margin: -15px 5px 25px;
+  height: 100px;
+}
+
+.fa-check {
+  color: #99E2D0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 50px;
+  margin: 25px;
+}
+
+.tick {
+  position: absolute;
+  margin: -70px 50px;
+  background-color: #99E2D0;
 }
 
 .card2 {
