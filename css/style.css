@@ -68,6 +68,35 @@ button:hover {
   /*box-shadow: ;*/
 }
 
+.solid-heart {
+  display: none;
+  color: #9356DC;
+}
+
+.solid-heart:hover {
+  visibility: visible;
+}
+
+.regular-heart:hover {
+  visibility: hidden;
+}
+
+/*i:hover{
+
+  animation: color 3s;
+
+}
+@keyframes color {
+  0% {
+    color: $primary-color;
+  }
+  50% {
+    color: lighten($primary-color, 50%);
+  }
+  100% {
+    color: $primary-color
+  }
+}*/
 header {
   margin: 15px 0;
   display: flex;
@@ -108,6 +137,10 @@ footer .footer-title {
 }
 footer ul li {
   margin: 15px 15px;
+  transition: ease-in 100ms;
+}
+footer ul li:hover {
+  color: #c2c2c2;
 }
 @media (min-width: 768px) {
   footer ul li {

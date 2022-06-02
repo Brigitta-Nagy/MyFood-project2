@@ -1,0 +1,30 @@
+
+.solid-heart {
+  display: none;
+  color: $primary-color;
+
+}
+.solid-heart:hover{
+  visibility: visible;
+}
+.regular-heart {
+  &:hover{
+    visibility: hidden;
+  }
+}
+/*i:hover{
+  
+  animation: color 3s;
+
+}
+@keyframes color {
+  0% {
+    color: $primary-color;
+  }
+  50% {
+    color: lighten($primary-color, 50%);
+  }
+  100% {
+    color: $primary-color
+  }
+}*/

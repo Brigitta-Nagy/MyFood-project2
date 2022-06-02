@@ -26,6 +26,14 @@ footer {
   }
   ul li{
     margin: 15px 15px;
+    transition: ease-in 100ms;
+    
+    &:hover{
+      color: darken($white-color, 20%);
+    
+    
+      
+    }
     @include tablet{
       margin: 15px 25px;
     }
