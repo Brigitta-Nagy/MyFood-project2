@@ -69,34 +69,46 @@ button:hover {
 }
 
 .solid-heart {
-  display: none;
+  opacity: 0;
   color: #9356DC;
+  animation: color;
+  transition: 0.5s ease-in;
+  position: inherit;
+  left: 1px;
 }
 
 .solid-heart:hover {
-  visibility: visible;
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 .regular-heart:hover {
-  visibility: hidden;
+  display: none;
 }
 
-/*i:hover{
-
-  animation: color 3s;
-
-}
 @keyframes color {
   0% {
-    color: $primary-color;
+    opacity: 0;
+    color: #e4d5f6;
+  }
+  20% {
+    color: white;
   }
   50% {
-    color: lighten($primary-color, 50%);
+    opacity: 0.8;
+    color: white;
+  }
+  70% {
+    color: white;
+  }
+  85% {
+    color: #9356DC;
   }
   100% {
-    color: $primary-color
+    opacity: 1;
+    color: #6023a9;
   }
-}*/
+}
 header {
   margin: 15px 0;
   display: flex;
@@ -172,7 +184,7 @@ body {
   text-align: center;
   align-items: center;
   flex-wrap: wrap;
-  background-color: #e6e6e6;
+  background-color: #ededed;
 }
 @media (min-width: 768px) {
   .book-menu {
@@ -316,6 +328,11 @@ figure .new {
   padding: 10px 25px;
   color: green;
 }
+figure .heart-container {
+  position: absolute;
+  left: 300px;
+  bottom: -10px;
+}
 
 figure img {
   width: 100%;
@@ -338,9 +355,8 @@ figcaption h3 {
 }
 
 .fa-heart {
-  align-self: flex-end;
+  align-self: flex-start;
   padding: 15px;
-  margin-top: -35px;
 }
 
 a {
