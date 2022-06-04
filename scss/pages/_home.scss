@@ -153,11 +153,7 @@ body {
     color: green;
 
     }
-  .heart-container{
-    position: absolute;
-    left: 300px;
-    bottom: -10px;
-  }
+
   }
 
   figure img {
@@ -165,13 +161,20 @@ body {
     height: 150px;
     object-fit: cover;
   }
-    figcaption {
+  figcaption{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  
+    .figcaption-text{
     display: flex;
     flex-direction: column;
-    margin-top: -5px;
+    margin-top: 5px 0;
     padding: 10px;
-    /*text-align: start;*/
-    
+    text-align: start;
+
+    }
     background-color: $white-color; 
 
     h3 {
@@ -179,13 +182,20 @@ body {
       font-weight: $font-weight-nearly-bold;
       margin: 10px 0;
     }
+    
   }
-  .fa-heart {
-   align-self: flex-start;
-   padding: 15px;
-   }
+ 
 
   a{
     text-decoration: none;
     color: black;
+  }
+
+  .heart-container{
+    margin-right: 15px;
+    position: relative;
+   
+    .solid-heart{
+      position: absolute;
+    }
   }

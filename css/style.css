@@ -68,45 +68,50 @@ button:hover {
   /*box-shadow: ;*/
 }
 
+.heart-container:hover > .solid-heart {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
 .solid-heart {
   opacity: 0;
-  color: #9356DC;
+  background: linear-gradient(to top, #FF79DA 30%, #9356DC 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
   animation: color;
   transition: 0.5s ease-in;
   position: inherit;
   left: 1px;
 }
 
-.solid-heart:hover {
-  opacity: 1;
-  transform: scale(1.1);
+.fa-2xl {
+  line-height: 1em;
 }
 
-.regular-heart:hover {
-  display: none;
+.heart-container:hover > .regular-heart {
+  opacity: 0;
 }
 
 @keyframes color {
   0% {
     opacity: 0;
-    color: #e4d5f6;
+    background-color: linear-gradient(to top, #FF79DA 70%, #9356DC 30%);
   }
   20% {
-    color: white;
+    background-color: linear-gradient(to top, #FF79DA 60%, #9356DC 40%);
   }
   50% {
     opacity: 0.8;
-    color: white;
+    background-color: linear-gradient(to top, #FF79DA 50%, #9356DC 50%);
   }
   70% {
-    color: white;
-  }
-  85% {
-    color: #9356DC;
+    background-color: linear-gradient(to top, #FF79DA 40%, #9356DC 60%);
   }
   100% {
     opacity: 1;
-    color: #6023a9;
+    background-color: linear-gradient(to top, #FF79DA 30%, #9356DC 70%);
   }
 }
 header {
@@ -328,11 +333,6 @@ figure .new {
   padding: 10px 25px;
   color: green;
 }
-figure .heart-container {
-  position: absolute;
-  left: 300px;
-  bottom: -10px;
-}
 
 figure img {
   width: 100%;
@@ -342,11 +342,16 @@ figure img {
 
 figcaption {
   display: flex;
-  flex-direction: column;
-  margin-top: -5px;
-  padding: 10px;
-  /*text-align: start;*/
+  justify-content: space-between;
+  align-items: center;
   background-color: #f5f5f5;
+}
+figcaption .figcaption-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px 0;
+  padding: 10px;
+  text-align: start;
 }
 figcaption h3 {
   font-size: 20px;
@@ -354,14 +359,17 @@ figcaption h3 {
   margin: 10px 0;
 }
 
-.fa-heart {
-  align-self: flex-start;
-  padding: 15px;
-}
-
 a {
   text-decoration: none;
   color: black;
+}
+
+.heart-container {
+  margin-right: 15px;
+  position: relative;
+}
+.heart-container .solid-heart {
+  position: absolute;
 }
 
 @media (min-width: 768px) {
