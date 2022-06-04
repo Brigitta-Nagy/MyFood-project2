@@ -65,6 +65,7 @@ body {
 
    }
    .choose, .create, .go {
+     cursor: pointer;
      background-color: $color; 
      border-radius: 25px;
      margin: 15px;
@@ -75,8 +76,11 @@ body {
      box-shadow: $box-shadow;
      &:hover{
       color: $primary-color;
-      transition: 5ms;
       
+      transition: 5ms;
+      i, p, .number{
+        transform: scale(1.05);
+      }
    }
      i{
        margin-right: 15px;
@@ -192,6 +196,7 @@ body {
   }
 
   .heart-container{
+    cursor: pointer;
     margin-right: 15px;
     position: relative;
    
