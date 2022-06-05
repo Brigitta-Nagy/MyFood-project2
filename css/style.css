@@ -254,10 +254,10 @@ body {
   padding: 35px;
   display: flex;
   box-shadow: 0 0.2rem 1.5rem rgba(0, 0, 0, 0.15);
+  transition: ease-in-out 200ms;
 }
 .how-works .choose:hover, .how-works .create:hover, .how-works .go:hover {
   color: #9356DC;
-  transition: 5ms;
 }
 .how-works .choose:hover i, .how-works .choose:hover p, .how-works .choose:hover .number, .how-works .create:hover i, .how-works .create:hover p, .how-works .create:hover .number, .how-works .go:hover i, .how-works .go:hover p, .how-works .go:hover .number {
   transform: scale(1.05);
@@ -452,8 +452,13 @@ img {
   animation: slide-up 1.5s ease;
   overflow: hidden;
 }
-.card:hover {
-  transform: translate(0px);
+.card:hover .fa-check {
+  transform: rotate(360deg);
+  transition: all 600ms 0.5s;
+}
+.card:hover .tick-container {
+  transform: translate(-150px);
+  transition: all 600ms ease-in-out;
 }
 .card .meal-name {
   font-weight: 1000;
@@ -466,19 +471,27 @@ img {
 
 .tick-fee-container {
   align-self: flex-end;
+  position: relative;
+  bottom: 100px;
+  right: -20px;
   font-weight: 1000;
+  transition: all 600ms ease-in-out;
 }
 
-.tick {
+.tick-container {
+  position: relative;
+  left: 150px;
+  height: 100%;
+  background-color: #99E2D0;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
   width: 100%;
-}
-.tick:hover {
-  transform: translate(60px);
-  transition: all 600ms ease-in-out;
+  /* &:hover{
+   transform: translate(-200px);
+   transition: all 600ms ease-in-out;
+   }*/
 }
 
 .fa-check {
@@ -486,20 +499,7 @@ img {
   padding: 10px;
   background-color: #fff;
   border-radius: 50px;
-}
-.fa-check:hover {
-  transform: rotate(360deg);
-  transition: all 600ms ease-in-out;
-}
-
-.card {
-  position: relative;
-}
-.card .tick {
-  position: absolute;
-  margin: -100px 0px;
-  height: 100%;
-  background-color: #99E2D0;
+  margin: 15px;
 }
 
 .card2 {

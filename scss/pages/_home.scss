@@ -74,10 +74,10 @@ body {
      padding: 35px;
      display: flex;
      box-shadow: $box-shadow;
+     transition: ease-in-out 200ms;
+
      &:hover{
       color: $primary-color;
-      
-      transition: 5ms;
       i, p, .number{
         transform: scale(1.05);
       }

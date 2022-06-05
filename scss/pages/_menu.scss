@@ -80,10 +80,16 @@
   box-shadow: $box-shadow;
   animation: slide-up 1.5s ease;
   overflow: hidden;
-
-&:hover {
-  transform: translate(0px)
-}
+  &:hover{
+    .fa-check{
+      transform: rotate(360deg);
+      transition: all 600ms 0.5s;
+    }
+    .tick-container{
+      transform: translate(-150px);
+      transition: all 600ms ease-in-out;
+    }
+    }
   .meal-name {
     font-weight: $font-weight-bold;
     font-size: 20px;
@@ -97,52 +103,50 @@
  
 .tick-fee-container {
   align-self: flex-end;
-  
+  position: relative;
+  bottom: 100px;
+  right: -20px;
   font-weight: $font-weight-bold;
-  
-  
+ 
+  transition: all 600ms ease-in-out;
+ 
 }
-.tick {
+.tick-container {
+  position: relative;
+  left: 150px;
+  height: 100%;
+  background-color: $tertiary-color;
   display: flex;
   justify-content: center;
   align-items: center;
+  
   height: 100%;
   width: 100%;
-  &:hover{
-  transform: translate(60px);
+  //check-green box is in 
+ /* &:hover{
+  transform: translate(-200px);
   transition: all 600ms ease-in-out;
-  }
+  }*/
 }
 .fa-check {
   color: $tertiary-color;
   padding: 10px;
   background-color: #fff;
   border-radius: 50px;
-  
-  &:hover {
-  transform: rotate(360deg);
-  transition: all 600ms ease-in-out;
-  }
-}
-.card { 
-  position: relative;
- .tick{ 
-  position: absolute;
-  margin: -100px 0px;
- 
-  height: 100%;
-  background-color: $tertiary-color;
+  margin: 15px;
+  //check spinner
 
- }
 }
- .card2{
+
+
+
+.card2{
   animation: slide-up 1.8s ease;
  }
 
 .card3 {
   animation: slide-up 2.2s ease;
 }
-
 
 
 
