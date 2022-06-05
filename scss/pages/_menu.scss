@@ -9,7 +9,7 @@
     
   }
   
-  
+
   .menu-card {
     background-color: $color;
     margin: -150px 0 0 0;
@@ -89,22 +89,32 @@
       transform: translate(-150px);
       transition: all 600ms ease-in-out;
     }
+    .fee{
+      transform: translate(-100px);
+      transition: all 600ms ease-in-out;
     }
-  .meal-name {
-    font-weight: $font-weight-bold;
-    font-size: 20px;
-    margin: 10px 0; 
+    }
 
-  }
-  p{
+  
+  .fee{
+    position: relative;
+    top: 80px;
     font-size: 20px;
+
   }
  }
  
+ .meal-name {
+  font-weight: $font-weight-bold;
+  font-size: 20px;
+  margin: 10px 0; 
+
+}
 .tick-fee-container {
+  
   align-self: flex-end;
   position: relative;
-  bottom: 100px;
+  bottom: 98px;
   right: -20px;
   font-weight: $font-weight-bold;
  

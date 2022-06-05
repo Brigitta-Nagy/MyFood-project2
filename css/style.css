@@ -62,10 +62,10 @@ button {
   font-family: 400;
   transition: ease-in-out 1s;
   box-shadow: 0 0.2rem 1.5rem rgba(0, 0, 0, 0.15);
+  display: block;
 }
 button:hover {
   transform: scale(1.1);
-  /*box-shadow: ;*/
 }
 
 .heart-container:hover > .solid-heart {
@@ -460,19 +460,26 @@ img {
   transform: translate(-150px);
   transition: all 600ms ease-in-out;
 }
-.card .meal-name {
+.card:hover .fee {
+  transform: translate(-100px);
+  transition: all 600ms ease-in-out;
+}
+.card .fee {
+  position: relative;
+  top: 80px;
+  font-size: 20px;
+}
+
+.meal-name {
   font-weight: 1000;
   font-size: 20px;
   margin: 10px 0;
-}
-.card p {
-  font-size: 20px;
 }
 
 .tick-fee-container {
   align-self: flex-end;
   position: relative;
-  bottom: 100px;
+  bottom: 98px;
   right: -20px;
   font-weight: 1000;
   transition: all 600ms ease-in-out;
