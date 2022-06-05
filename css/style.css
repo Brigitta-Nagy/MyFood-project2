@@ -387,7 +387,13 @@ img {
   width: 100%;
 }
 
+.restaurant-menu img {
+  object-fit: cover;
+  height: 700px;
+}
+
 .menu-card {
+  position: absolute;
   background-color: #e6e6e6;
   margin: -150px 0 0 0;
   height: 100%;
@@ -403,8 +409,8 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px;
-  margin-left: 25px;
+  padding-bottom: 25px;
+  margin: 25px;
 }
 .restaurant-name h1 {
   font-weight: 1000;
@@ -461,13 +467,21 @@ img {
   transition: all 600ms ease-in-out;
 }
 .card:hover .fee {
-  transform: translate(-100px);
+  transform: translate(-80px);
   transition: all 600ms ease-in-out;
 }
 .card .fee {
   position: relative;
   top: 80px;
   font-size: 20px;
+}
+
+.meal, .meal-name {
+  position: relative;
+  padding-bottom: 25px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .meal-name {
@@ -479,8 +493,9 @@ img {
 .tick-fee-container {
   align-self: flex-end;
   position: relative;
-  bottom: 98px;
+  bottom: 110px;
   right: -20px;
+  width: 150px;
   font-weight: 1000;
   transition: all 600ms ease-in-out;
 }
@@ -495,10 +510,6 @@ img {
   align-items: center;
   height: 100%;
   width: 100%;
-  /* &:hover{
-   transform: translate(-200px);
-   transition: all 600ms ease-in-out;
-   }*/
 }
 
 .fa-check {

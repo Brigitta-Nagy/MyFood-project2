@@ -6,11 +6,16 @@
 
   img {
     width: 100%;
+   
+  }
+  .restaurant-menu img{
+    object-fit: cover;
+    height: 700px;
     
   }
-  
 
   .menu-card {
+    position: absolute;
     background-color: $color;
     margin: -150px 0 0 0;
     height: 100%;
@@ -28,8 +33,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px;
-    margin-left: 25px;
+    padding-bottom: 25px;
+    margin: 25px;
+    
     h1 {
       font-weight: $font-weight-bold;
       font-size: 45px;
@@ -39,13 +45,12 @@
 
 
  .entrees-cards {
- 
-   padding: 20px;
+    padding: 20px;
+   
    
    h2 {
     font-size: 25px;
     margin-left: 15px;
-
     }
 
    h2:after {
@@ -70,6 +75,7 @@
   }
 
 .card {
+  
   background-color: $white-color;
   margin: 25px 15px;
   border-radius: 25px;
@@ -90,34 +96,40 @@
       transition: all 600ms ease-in-out;
     }
     .fee{
-      transform: translate(-100px);
+      transform: translate(-80px);
       transition: all 600ms ease-in-out;
     }
     }
 
-  
   .fee{
     position: relative;
     top: 80px;
     font-size: 20px;
 
   }
+ 
+ }
+ .meal, .meal-name {
+  position: relative;
+  padding-bottom: 25px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
  }
  
  .meal-name {
   font-weight: $font-weight-bold;
   font-size: 20px;
   margin: 10px 0; 
-
+  
 }
 .tick-fee-container {
-  
   align-self: flex-end;
   position: relative;
-  bottom: 98px;
+  bottom: 110px;
   right: -20px;
+  width: 150px;
   font-weight: $font-weight-bold;
- 
   transition: all 600ms ease-in-out;
  
 }
@@ -129,14 +141,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
   height: 100%;
   width: 100%;
-  //check-green box is in 
- /* &:hover{
-  transform: translate(-200px);
-  transition: all 600ms ease-in-out;
-  }*/
+
 }
 .fa-check {
   color: $tertiary-color;
@@ -144,7 +151,7 @@
   background-color: #fff;
   border-radius: 50px;
   margin: 15px;
-  //check spinner
+  
 
 }
 
