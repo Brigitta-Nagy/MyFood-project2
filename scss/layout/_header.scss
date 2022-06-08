@@ -11,4 +11,9 @@ header{
     margin: 25px auto;
     
   }
+  img {
+    @include desktop {
+      width: 30%;
+    }
+  }
 }
