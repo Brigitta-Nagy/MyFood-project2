@@ -467,7 +467,7 @@ img {
   transition: all 600ms ease-in-out;
 }
 .card:hover .fee {
-  transform: translate(-80px);
+  transform: translate(-60px);
   transition: all 600ms ease-in-out;
 }
 .card .fee {
@@ -479,6 +479,7 @@ img {
 .meal, .meal-name {
   position: relative;
   padding-bottom: 25px;
+  width: 50%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -495,7 +496,7 @@ img {
   position: relative;
   bottom: 110px;
   right: -20px;
-  width: 150px;
+  min-width: 15%;
   font-weight: 1000;
   transition: all 600ms ease-in-out;
 }
@@ -508,7 +509,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
   width: 100%;
 }
 
