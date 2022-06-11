@@ -2,7 +2,7 @@
 .heart-container:hover > .solid-heart {
 
   opacity: 1;
-  transform: scale(1.05);
+  transform: scale(1.05)
 
 }
 
@@ -12,10 +12,10 @@
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
+  
+  
   color: transparent;
-  .solid-heart:hover{
-    transform: scale(0.2);
-  }
+  
   /*animation: color;*/
   transition: 0.5s ease-in;
   

@@ -85,9 +85,6 @@ button:hover {
   position: inherit;
   left: 1px;
 }
-.solid-heart .solid-heart:hover {
-  transform: scale(0.2);
-}
 
 .fa-2xl {
   line-height: 1em;
