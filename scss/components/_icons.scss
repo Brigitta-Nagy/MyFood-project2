@@ -13,8 +13,11 @@
   -webkit-background-clip: text;
   -moz-background-clip: text;
   color: transparent;
-  animation: color;
-  transition: .5s ease-in;
+  .solid-heart:hover{
+    transform: scale(1);
+  }
+  /*animation: color;*/
+  transition: 1.5s ease-in;
   
   position: inherit;
   left: 1px;
@@ -29,7 +32,7 @@
   opacity: 0;
 }
 
-@keyframes color {
+/*@keyframes color {
   0% {
     opacity: 0;
     background-color: linear-gradient(to top, #FF79DA 70%, #9356DC 30%) ;
@@ -50,4 +53,4 @@
     background-color: linear-gradient(to top, #FF79DA 30%, #9356DC 70%) ;
   
   }
-}
+}*/

@@ -1,10 +1,4 @@
-  body{
-    @include tablet {
-      margin: 0 25px;
-    }
-    @include desktop{
-      margin: 0;    }
-  }
+ 
 
   img {
     width: 100%;

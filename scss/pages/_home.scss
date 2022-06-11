@@ -138,33 +138,40 @@ main{
      padding: 50px 20px 25px;
    }
    article {
+    
      border-radius: 25px;
      margin: 15px;
      overflow: hidden;
      box-shadow: $box-shadow;
-     @include tablet {
-      width: 100%;
-    }
-    @include desktop {
+   
+     @include desktop {
+      justify-content: space-around;
+      align-content: center;
       margin: 25px;
-      width: 500px;
+      width: 40%;
      
     }
   }
   @include tablet {
     margin: 25px;
     border-radius: 25px;
-  }
-  @include desktop{
+   }
+    @include desktop{
     width: 80%;
   }
  
  }
- .main-restaurant-card{
-   display: flex;
-   
- }
  
+ .main-restaurant-card{
+ 
+  @include desktop {
+    display: flex;
+   justify-content: space-around;
+   width: 100%;
+    
+  }
+  
+}
  .restaurants-cards{
    @include tablet {
      display: flex;
@@ -175,12 +182,16 @@ main{
 
   }
    @include desktop {
+    
      flex-direction: column;
      justify-content: center;
      align-items: center;
      
      
    }
+   @include mobile {
+    flex-direction: column;
+  }
  }
  figure {
   position: relative;

@@ -80,10 +80,13 @@ button:hover {
   -webkit-background-clip: text;
   -moz-background-clip: text;
   color: transparent;
-  animation: color;
-  transition: 0.5s ease-in;
+  /*animation: color;*/
+  transition: 1.5s ease-in;
   position: inherit;
   left: 1px;
+}
+.solid-heart .solid-heart:hover {
+  transform: scale(1);
 }
 
 .fa-2xl {
@@ -94,26 +97,28 @@ button:hover {
   opacity: 0;
 }
 
-@keyframes color {
+/*@keyframes color {
   0% {
     opacity: 0;
-    background-color: linear-gradient(to top, #FF79DA 70%, #9356DC 30%);
+    background-color: linear-gradient(to top, #FF79DA 70%, #9356DC 30%) ;
   }
-  20% {
-    background-color: linear-gradient(to top, #FF79DA 60%, #9356DC 40%);
+  20%{
+    background-color: linear-gradient(to top, #FF79DA 60%, #9356DC 40%) ;
   }
   50% {
     opacity: 0.8;
-    background-color: linear-gradient(to top, #FF79DA 50%, #9356DC 50%);
+    background-color: linear-gradient(to top, #FF79DA 50%, #9356DC 50%) ;
   }
-  70% {
-    background-color: linear-gradient(to top, #FF79DA 40%, #9356DC 60%);
+  70%{
+    background-color: linear-gradient(to top, #FF79DA 40%, #9356DC 60%) ;
   }
+
   100% {
     opacity: 1;
-    background-color: linear-gradient(to top, #FF79DA 30%, #9356DC 70%);
+    background-color: linear-gradient(to top, #FF79DA 30%, #9356DC 70%) ;
+
   }
-}
+}*/
 header {
   margin: 15px 0;
   display: flex;
@@ -325,15 +330,12 @@ body {
   overflow: hidden;
   box-shadow: 0 0.2rem 1.5rem rgba(0, 0, 0, 0.15);
 }
-@media (min-width: 768px) {
-  .restaurants-container article {
-    width: 100%;
-  }
-}
 @media (min-width: 992px) {
   .restaurants-container article {
+    justify-content: space-around;
+    align-content: center;
     margin: 25px;
-    width: 500px;
+    width: 40%;
   }
 }
 @media (min-width: 768px) {
@@ -348,8 +350,12 @@ body {
   }
 }
 
-.main-restaurant-card {
-  display: flex;
+@media (min-width: 992px) {
+  .main-restaurant-card {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -366,6 +372,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+}
+@media (min-width: 600px) {
+  .restaurants-cards {
+    flex-direction: column;
   }
 }
 
@@ -420,17 +431,6 @@ a {
 }
 .heart-container .solid-heart {
   position: absolute;
-}
-
-@media (min-width: 768px) {
-  body {
-    margin: 0 25px;
-  }
-}
-@media (min-width: 992px) {
-  body {
-    margin: 0;
-  }
 }
 
 img {
