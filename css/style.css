@@ -70,7 +70,7 @@ button:hover {
 
 .heart-container:hover > .solid-heart {
   opacity: 1;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .solid-heart {
@@ -81,19 +81,19 @@ button:hover {
   -moz-background-clip: text;
   color: transparent;
   /*animation: color;*/
-  transition: 1.5s ease-in;
+  transition: 0.5s ease-in;
   position: inherit;
   left: 1px;
 }
 .solid-heart .solid-heart:hover {
-  transform: scale(1);
+  transform: scale(0.2);
 }
 
 .fa-2xl {
   line-height: 1em;
 }
 
-.heart-container:hover > .regular-heart {
+/*.heart-container:hover > .regular-heart {
   opacity: 0;
 }
 

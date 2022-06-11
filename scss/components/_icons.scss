@@ -2,7 +2,7 @@
 .heart-container:hover > .solid-heart {
 
   opacity: 1;
-  transform: scale(1.1);
+  transform: scale(1.05);
 
 }
 
@@ -14,10 +14,10 @@
   -moz-background-clip: text;
   color: transparent;
   .solid-heart:hover{
-    transform: scale(1);
+    transform: scale(0.2);
   }
   /*animation: color;*/
-  transition: 1.5s ease-in;
+  transition: 0.5s ease-in;
   
   position: inherit;
   left: 1px;
@@ -28,7 +28,7 @@
   line-height: 1em;
 }
 
-.heart-container:hover > .regular-heart {
+/*.heart-container:hover > .regular-heart {
   opacity: 0;
 }
 
