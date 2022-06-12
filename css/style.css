@@ -493,16 +493,24 @@ img {
     opacity: 1;
   }
 }
+.meal-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 50%;
+}
+
 .card {
   background-color: #f5f5f5;
   margin: 25px 15px;
   border-radius: 25px;
   height: 100px;
   display: flex;
-  flex-direction: column;
-  padding: 20px;
+  flex-direction: row;
+  /*padding: 20px;*/
   box-shadow: 0 0.2rem 1.5rem rgba(0, 0, 0, 0.15);
   animation: slide-up 1.5s ease;
+  justify-content: space-between;
   overflow: hidden;
 }
 .card:hover .fa-check {
@@ -514,19 +522,17 @@ img {
   transition: all 600ms ease-in-out;
 }
 .card:hover .fee {
-  transform: translate(-60px);
+  transform: translate(-50px);
   transition: all 600ms ease-in-out;
 }
 .card .fee {
-  position: relative;
-  top: 80px;
-  font-size: 20px;
+  margin-top: 45px;
+  width: 100%;
 }
 
 .meal, .meal-name {
   position: relative;
   padding-bottom: 25px;
-  width: 50%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -539,18 +545,23 @@ img {
 }
 
 .tick-fee-container {
-  align-self: flex-end;
+  /*align-self: flex-end;
   position: relative;
-  bottom: 110px;
-  right: -20px;
-  min-width: 15%;
+  bottom: 110px;*/
+  display: flex;
+  height: 100%;
+  /*min-width: 15%;*/
   font-weight: 1000;
-  transition: all 600ms ease-in-out;
+  /*transition: all 600ms ease-in-out;*/
 }
 
 .tick-container {
   position: relative;
-  left: 150px;
+  right: -150px;
+  border-radius: 0 15px 15px 0;
+  /* position: relative;
+   right: -220px;
+   left: 150px;*/
   height: 100%;
   background-color: #99E2D0;
   display: flex;

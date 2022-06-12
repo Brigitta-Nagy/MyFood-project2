@@ -4,6 +4,7 @@
     width: 100%;
    
   }
+
   .restaurant-menu img{
     object-fit: cover;
     height: 700px;
@@ -69,7 +70,12 @@
        opacity: 1;
     }
   }
-
+.meal-container{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 50%;
+}
 .card {
   
   background-color: $white-color;
@@ -77,10 +83,12 @@
   border-radius: 25px;
   height: 100px;
   display: flex;
-  flex-direction: column;
-  padding: 20px;
+  flex-direction: row ;
+  /*padding: 20px;*/
   box-shadow: $box-shadow;
   animation: slide-up 1.5s ease;
+  justify-content: space-between;
+
   overflow: hidden;
   
   &:hover{
@@ -93,23 +101,20 @@
       transition: all 600ms ease-in-out;
     }
     .fee{
-      transform: translate(-60px);
+      transform: translate(-50px);
       transition: all 600ms ease-in-out;
     }
     }
 
   .fee{
-    position: relative;
-    top: 80px;
-    font-size: 20px;
-
+    margin-top: 45px;
+    width: 100%;
   }
  
  }
  .meal, .meal-name {
   position: relative;
   padding-bottom: 25px;
-  width: 50%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; 
@@ -123,18 +128,24 @@
   
 }
 .tick-fee-container {
-  align-self: flex-end;
+  /*align-self: flex-end;
   position: relative;
-  bottom: 110px;
-  right: -20px;
-  min-width: 15%;
+  bottom: 110px;*/
+ 
+  display: flex;
+  height: 100%;
+  /*min-width: 15%;*/
   font-weight: $font-weight-bold;
-  transition: all 600ms ease-in-out;
+  /*transition: all 600ms ease-in-out;*/
  
 }
 .tick-container {
   position: relative;
-  left: 150px;
+  right: -150px;
+  border-radius: 0 15px 15px 0;
+ /* position: relative;
+  right: -220px;
+  left: 150px;*/
   height: 100%;
   background-color: $tertiary-color;
   display: flex;
