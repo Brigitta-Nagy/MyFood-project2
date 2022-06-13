@@ -118,14 +118,42 @@ button:hover {
 }*/
 .preloader-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: antiquewhite;
+  background-color: #e6e6e6;
 }
 
 .myfood-text-preloader {
   font-family: "Shrikhand", cursive;
+  font-size: 100px;
+  color: #FF79DA;
+  position: relative;
+}
+.myfood-text-preloader::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  height: 100%;
+  width: 120%;
+  border-left: 2px solid #9356DC;
+  animation: type 1s steps(8) forwards;
+  background-color: #e6e6e6;
+}
+
+@keyframes type {
+  100% {
+    left: 120%;
+    margin: 0 -65px 0 45px;
+  }
+}
+.welcome-preloader {
+  margin: 25px;
+  font-family: Roboto, sans-serif;
+  font-size: 40px;
+  color: #9356DC;
+  animation: slide-up 2s ease;
 }
 
 header {
