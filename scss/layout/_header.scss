@@ -17,3 +17,11 @@ header{
     }
   }
 }
+.arrow-back-container{
+  display: flex;
+  justify-items:flex-start ;
+  .fa-arrow-left{
+    
+    border: 1px solid black;
+  }
+}

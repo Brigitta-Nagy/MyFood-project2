@@ -70,7 +70,7 @@ button:hover {
 
 .heart-container:hover > .solid-heart {
   opacity: 1;
-  transform: scale(1.05);
+  transform: scale(1.06);
 }
 
 .solid-heart {
@@ -116,6 +116,18 @@ button:hover {
 
   }
 }*/
+.preloader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: antiquewhite;
+}
+
+.myfood-text-preloader {
+  font-family: "Shrikhand", cursive;
+}
+
 header {
   margin: 15px 0;
   display: flex;
@@ -134,6 +146,14 @@ header img {
   header img {
     width: 30%;
   }
+}
+
+.arrow-back-container {
+  display: flex;
+  justify-items: flex-start;
+}
+.arrow-back-container .fa-arrow-left {
+  border: 1px solid black;
 }
 
 footer {
