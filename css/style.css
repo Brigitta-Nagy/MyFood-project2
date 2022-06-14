@@ -180,28 +180,28 @@ header {
   position: relative;
   display: flex;
   justify-content: center;
-  height: 70px;
+  align-content: center;
   align-items: center;
   width: 100%;
 }
 header .fa-arrow-left {
   position: absolute;
-  top: 20px;
+  top: 30px;
   left: 30px;
-  background-color: aliceblue;
+}
+@media (min-width: 600px) {
+  header .fa-arrow-left {
+    top: 10px;
+  }
 }
 header img {
   width: 50%;
-  align-self: flex-end;
-}
-@media (min-width: 768px) {
-  header {
-    width: 70%;
-  }
+  margin-top: 5px;
 }
 @media (min-width: 992px) {
   header img {
     width: 20%;
+    margin: 15px;
   }
 }
 
