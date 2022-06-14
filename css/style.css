@@ -130,7 +130,7 @@ button:hover {
   left: 0;
   right: 0;
   visibility: hidden;
-  z-index: 9;
+  z-index: 5;
   animation: visible 3.5s forwards;
 }
 
@@ -147,7 +147,7 @@ button:hover {
   height: 100%;
   width: 105%;
   border-left: 2px solid #9356DC;
-  animation: type 1s steps(8) forwards;
+  animation: type 2s steps(8) forwards;
   background-color: #e6e6e6;
 }
 
@@ -177,31 +177,32 @@ button:hover {
   }
 }
 header {
-  margin: 15px 0;
+  position: relative;
   display: flex;
   justify-content: center;
+  height: 70px;
+  align-items: center;
+  width: 100%;
+}
+header .fa-arrow-left {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  background-color: aliceblue;
 }
 header img {
   width: 50%;
+  align-self: flex-end;
 }
 @media (min-width: 768px) {
   header {
-    width: 50%;
-    margin: 25px auto;
+    width: 70%;
   }
 }
 @media (min-width: 992px) {
   header img {
-    width: 30%;
+    width: 20%;
   }
-}
-
-.arrow-back-container {
-  display: flex;
-  justify-items: flex-start;
-}
-.arrow-back-container .fa-arrow-left {
-  border: 1px solid black;
 }
 
 footer {

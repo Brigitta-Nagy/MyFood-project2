@@ -1,27 +1,30 @@
-header{
-  margin: 15px 0;
+header {
+  position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .fa-arrow-left {
+   position: absolute;
+   top: 20px;
+   left: 30px;
+   
  
-  img{
+  img {
     width: 50%;
+    
   }
   @include tablet {
-    width: 50%;
-    margin: 25px auto;
+    width: 70%;
+    
     
   }
   img {
     @include desktop {
-      width: 30%;
+      width: 20%;
+      
     }
   }
-}
-.arrow-back-container{
-  display: flex;
-  justify-items:flex-start ;
-  .fa-arrow-left{
-    
-    border: 1px solid black;
-  }
+  
 }

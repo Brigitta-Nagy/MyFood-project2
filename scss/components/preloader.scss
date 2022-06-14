@@ -13,7 +13,7 @@
   left: 0; 
   right: 0;
   visibility: hidden;
-  z-index: 9;
+  z-index: 5;
   animation: visible 3.5s forwards;
 
 }
@@ -30,7 +30,7 @@
     height: 100%;
     width: 105%;
     border-left: 2px solid $primary-color;
-    animation: type 1s steps(8) forwards;
+    animation: type 2s steps(8) forwards;
     background-color: $color;
    }
 }
