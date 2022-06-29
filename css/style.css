@@ -160,13 +160,8 @@ header {
 }
 header .fa-arrow-left {
   position: absolute;
-  top: 30px;
-  left: 30px;
-}
-@media (min-width: 600px) {
-  header .fa-arrow-left {
-    top: 10px;
-  }
+  left: 5%;
+  top: 30%;
 }
 header img {
   width: 50%;
@@ -477,9 +472,14 @@ img {
   width: 100%;
 }
 
+@media (min-width: 992px) {
+  body {
+    margin: 0 200px;
+  }
+}
 .restaurant-menu img {
   object-fit: cover;
-  height: 700px;
+  height: 500px;
 }
 
 .menu-card {

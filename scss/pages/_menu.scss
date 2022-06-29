@@ -2,13 +2,18 @@
 
   img {
     width: 100%;
-   
+  
   }
 
+  @include desktop {
+   body{
+    margin: 0 200px;
+   }
+ }
   .restaurant-menu img{
     object-fit: cover;
-    height: 700px;
-    
+    height: 500px;
+   
   }
 
   .menu-card {

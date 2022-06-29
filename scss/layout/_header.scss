@@ -8,13 +8,10 @@ header {
 
   .fa-arrow-left {
    position: absolute;
-   top:30px;
-   left: 30px;
+   left: 5%;
+   top:30%;
 
-    @include mobile {
-     top: 10px;
-
-    }
+   
   }
  
   img {
