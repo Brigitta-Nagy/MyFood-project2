@@ -5,10 +5,13 @@
 }
 body {
   font-family: $font-stack;
+  margin: 0 auto;
+
   
   }
 
 .book-menu {
+  
     margin: 20px 0;
     display: flex;
     flex-direction: column;
@@ -66,6 +69,7 @@ body {
      
 
    }
+   
    .choose, .create, .go {
      cursor: pointer;
      background-color: $color; 
@@ -125,11 +129,7 @@ main{
   margin-bottom: 25px;
 }
 }
-.nav-container{ 
-  @include desktop{
- width: 30%;
-  }
-}
+
  .restaurants-container {
    background-color: lighten($light-grey-color, 10%);
    h2 {
