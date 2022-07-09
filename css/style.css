@@ -84,7 +84,6 @@ button:hover {
   -webkit-background-clip: text;
   -moz-background-clip: text;
   color: transparent;
-  /*animation: color;*/
   transition: 0.5s ease-in;
   position: inherit;
   left: 1px;
