@@ -8,3 +8,6 @@ order your meal before you arrive there, and when you be there - no waiting time
 There is a preloader with only CSS and more animations. 
 
 Technologies: HTML, SASS 
+
+
+https://magnificent-pasca-45108c.netlify.app/
